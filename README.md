@@ -4,6 +4,11 @@ forked from
 
 and just added 2 examples that seem to work on my box (arduino nano clone) with the eeprom i want to read. (93c66)
 
+if you copy the dump from the arduino serial monitor and save it to a text file, you might want to remove the carriage returns and bring it into a more human readable format by adding the leading zeros:
+
+cat tacho16bitfixed.txt | awk '{gsub("\r",""); print $6}' | awk ' {for(i=length($0);i<4;i++){$0="0"$0}print}' | xargs -n8
+
+
 Original Text:
 
 This library enables you to read and write EEPROM chips which use the Microwire

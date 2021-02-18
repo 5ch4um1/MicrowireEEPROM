@@ -1,4 +1,10 @@
+forked from 
+
 # Microwire EEPROM Library for Arduino
+
+and just added 2 examples that seem to work on my box (arduino nano clone) with the eeprom i want to read. (93c66)
+
+Original Text:
 
 This library enables you to read and write EEPROM chips which use the Microwire
 protocol. Examples are chips such as the ST93C66 or 93LC46. See the datasheets
